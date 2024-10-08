@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
+
 void main() {
   runApp(
-    const MaterialApp(
-      home: Center(
-        child: Text("Hello, World!"),
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true, // Add this line to center the title
+          title: const Text(
+            "The Testing Application",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          backgroundColor: Colors.blueGrey[900],
+        ),
       ),
     ),
   );
